@@ -15,7 +15,7 @@ await page.goto('https://www.demoblaze.com/index.html');
   await expect(page).toHaveURL('https://www.demoblaze.com/index.html');
   console.log('Expected url is :' + pageURL);
 
-   await page.close();
+   //await page.close();
 
 
 })

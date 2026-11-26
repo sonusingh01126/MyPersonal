@@ -1,5 +1,5 @@
 
-const {test, expect} = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 test('Locaters', async({page})=>{ 
 
@@ -13,7 +13,10 @@ test('Locaters', async({page})=>{
 
       const Title = await page.title();
       console.log(Title);
+      
       await expect.soft(page).toHaveTitle('OrangeHRM')
+
+      await page.close();
 
 
 })
