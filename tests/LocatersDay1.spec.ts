@@ -36,9 +36,15 @@ const popup = page.locator('//span[@class="b3wTlE"]')
 await popup.click()
 const fashion = page.locator  ("//div[text () = 'Fashion']")
 
+await expect(fashion).toBeEnabled();
+await expect(fashion).toBeVisible();
+console.log('Fashion is enabled and visible');
+console.log(await fashion.innerText())
+
 
 await fashion.click()
 
+//
 await page.close()
 
 
