@@ -8,15 +8,9 @@ test('register',async({page})  =>{
 
  await logocheck.toBeVisible()
 
-    //console.log(await logocheck.innertext());
+    console.log("It is visible")
 
 
-
-   // console.log(logocheck)  
-
-
-
-
-//await page.close()
+await page.close()
 
 })
